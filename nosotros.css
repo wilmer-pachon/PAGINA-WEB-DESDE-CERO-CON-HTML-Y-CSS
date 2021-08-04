@@ -1,0 +1,85 @@
+.header{
+    height: 50vh;
+}
+
+.nosotros{
+    width: 100%;
+}
+
+.titulo_nosotros{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #d30202;
+}
+
+.titulo_nosotros:after{
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #d30202;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img_nosotros{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.texto_nosotros{
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.historia{
+    width: 100%;
+    background: #1d1248;
+    color: white;
+}
+
+.titulo_historia{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.titulo_historia:after{
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img_historia{
+    width: 100%;
+}
+
+.texto_historia{
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (min-width:768px){
+    .img_nosotros{
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .img_historia{
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+}

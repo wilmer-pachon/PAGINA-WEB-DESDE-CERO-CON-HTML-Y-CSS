@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/***** EATILOS GLOBALES **/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.modificador{
+    width: 100%;
+    margin: auto;
+}
+
+/** FIN ESTILOS GLOBALES*/
+
+/** ESTILOS CABECERA MENU */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,7)), url(../Img/5.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.cabecera{
+    width: 100%;
+}
+
+.logo{
+    width: 100%;
+    float: right;
+}
+
+.franja{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.icon-menu{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    display: block;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 1.5em;
+}
+
+.menu{
+    width: 100%;
+    margin-top: 50px;
+    transition: height .3s linear;
+    z-index: 1000;
+    height: 0;
+    overflow: hidden;
+}
+
+.mostrar{
+    height: 300px;
+}
+
+.lista{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background: #cba919;
+}
+
+.link:hover{
+    background-color: #de0303;
+}
+
+.seleccion{
+    background: #d30203;
+}
+
+.texto{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.titulo{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.boton{
+    text-decoration: none;
+    color: white;
+    border: 2px solid #d30203;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.boton:hover{
+    background: #de0303;
+}
+/** FIN ESTILOS CABAECERA MENU */
+
+/**  ESTILOS PRIMERA SECCION */
+
+.principal{
+    width: 100%;
+}
+
+.titulo_principal{
+    width: 100%;
+    text-align: center;
+    color: #d30203;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_principa:after{
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #d30203;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.promo{
+    width: 100%;
+    margin: 5px;
+}
+.promo [class*="icon-"]:before{
+    color: #d30203;
+    font-size: 80px;
+    display: block;
+    text-align: center;
+}
+.titulo_promo{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto_promo{
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/**  FIN ESTILOS PRIMERA SECCION */
+
+/** ESTILOS SEGUNDA SECCION */
+
+.telefono{
+    width: 100%;
+}
+
+.titulo_telefono{
+    width: 100%;
+    text-align:  center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d30203;
+}
+
+.titulo_telefono:after{
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #de0303;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.img_telefono{
+    width: 100%;
+}
+
+.numero{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #de0303;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.texto_descripcion{
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/** FIN ESTILOS SEGUNDA SECCION */
+
+
+/** ESTILOS TERCERA SECCION */
+.sucursales{
+    width: 100%;
+}
+
+.titulo_sucursales{
+    width: 100%;
+    text-align: center;
+    color: #d30203;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_sucursales::after{
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: #d30203;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tiendas{
+    width: 100%;
+}
+
+.titulo_tiendas{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.img_tiendas{
+    width: 100%;
+}
+
+.lista_tienda{
+    list-style: none;
+    line-height: 30px;
+}
+
+.tiendas [class*="icon-asterico"]::before{
+    margin: 10px;
+    position: relative;
+    color: #d30203;
+}
+/** FIN ESTILOS TRCERA SECCION */
+
+/** ESTILOS CUARTA SECCION */
+.clientes{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url(../Img/7.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.titulo_clientes{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+
+.titulo_clientes:after{
+    display: block;
+    content: '';
+    width: 200px;
+    height: 4px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.testimonios{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.texto_testimonios{
+    margin: 10px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.img_perfil{
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nombre_perfil{
+    margin-top: -50px;
+    margin-left: 150px;
+}
+/** FIN ESTILOS CUARTA SECCION */
+
+/** ESTILOS FOOTER */
+footer{
+    background: #17233c;
+    color: white;
+}
+
+.pie{
+    width: 100%;
+}
+
+.item_pie{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo_pie{
+    width: 100%;
+    text-align: center;
+}
+
+.texto_pie{
+    margin: 10px;
+}
+
+.lista_pie{
+    list-style: none;
+}
+
+.link_pie{
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.derechos{
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 20px;
+}
+/** FIN ESTILOS FOOTER /
+
+/** EATILOS RESPONSIVE */
+ 
+    .titulo{
+        font-size: 65px;
+    }
+
+    .promo{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .descripcion{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .telefono{
+        align-items: flex-start;
+    }
+
+    .tiendas{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .testimonios{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .item_pie{
+        width: 45%;
+        margin: 10px;
+    }
+
+    .pie{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+@media screen and (min-width:1024px){
+    .modificador{
+        width: 1000px;
+    }
+
+    .titulo{
+        font-size: 80px;
+    }
+
+    .icon-menu{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        width: auto;
+        height: auto;
+        margin-top: -150px;
+        margin-left: 50%;
+    }
+
+    .link{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .modificador{
+        width: 1400px;
+    }
+
+    .promo{
+        width: 23%;
+    }
+
+    .principal{
+        align-items: flex-start;
+    }
+
+    .texto_descripcion{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .tiendas{
+        width: 23%;
+    }
+
+    .testimonios{
+        width: 31%;
+    }
+
+    .clientes{
+        align-items: flex-start;
+    }
+
+    .item_pie{
+        width: 31%;
+    }
+
+    .pie{
+        align-items: flex-start;
+    }
+}
+
+
+/** FIN ESTILOS RESPONSIVE */
+
+
+
+
